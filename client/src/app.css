@@ -1,0 +1,16 @@
+* {
+  font-family: Vazir FD;
+  transition: 0.3s;
+}
+body {
+  overflow-x: hidden;
+}
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.rtl {
+  direction: rtl;
+}

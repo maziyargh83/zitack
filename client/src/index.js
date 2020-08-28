@@ -1,12 +1,17 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
+import { Spin } from "antd";
+import "antd/dist/antd.css";
+import "./app-assets/css/app.css";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={<Spin />}>
+      <App />
+    </Suspense>
   </React.StrictMode>,
+
   document.getElementById("root")
 );
 
