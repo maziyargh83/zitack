@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className="w-full h-28 shadow-lg px-5 flex bg-gradient-to-r from-indigo  to-bogart-600 ">
       <div className="w-1/3 flex items-center">
-        <h3 className="text-white font-bold text-xl">Fucking project</h3>
+        <h3 className="text-white font-bold text-xl">Zitack</h3>
       </div>
       <div className="w-1/3">
         <div className="flex my-4 p-2 rounded-lg bg-purple-800">
