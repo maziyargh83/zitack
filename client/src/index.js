@@ -1,10 +1,10 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Spin } from "antd";
 import "antd/dist/antd.css";
 import "./app-assets/css/app.css";
+const App = lazy(() => import("./App"));
 ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback={<Spin />}>
