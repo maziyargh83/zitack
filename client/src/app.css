@@ -14,3 +14,7 @@ body {
 .rtl {
   direction: rtl;
 }
+
+.ant-progress-text {
+  color: #fff !important;
+}
