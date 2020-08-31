@@ -12,7 +12,7 @@ const Home = () => {
         <div className="rounded bg-indigo shadow-md p-2">
           <div className="flex">
             <div className="w-5/6 rtl text-white">
-              <h1>تسک های امروز</h1>
+              <h1 className="text-white">تسک های امروز</h1>
               <Progress
                 strokeColor={{
                   "0%": "#108ee9",
