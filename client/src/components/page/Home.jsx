@@ -27,12 +27,12 @@ const Home = () => {
                 <li>کل تسک ها : ۱۵</li>
               </ul>
             </div>
-            <div className="w-1/6 text-center text-white">
+            <div className="w-1/6 text-center grid items-center text-white">
               <p className="font-bold text-xl">
-                {moment(Date.now()).locale("fa").format("MM")}
+                {moment(new Date().getTime()).locale("fa").format("DD")}
               </p>
               <p className="font-bold text-md">
-                {moment(Date.now()).locale("fa").format("MMMM")}
+                {moment(new Date().getTime()).locale("fa").format("MMMM")}
               </p>
             </div>
           </div>

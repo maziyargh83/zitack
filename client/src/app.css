@@ -17,4 +17,5 @@ body {
 
 .ant-progress-text {
   color: #fff !important;
+  margin: 0 2px;
 }

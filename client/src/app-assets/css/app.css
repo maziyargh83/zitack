@@ -21342,6 +21342,7 @@ video {
 
 .ant-progress-text {
   color: #fff !important;
+  margin: 0 2px;
 }
 
 @media (min-width: 640px) {
