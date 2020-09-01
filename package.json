@@ -10,6 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "npm run start --prefix client",
+    "install": "npm install && npm install --prefix client",
     "json-server": "json-server --watch db.json --port 8888",
     "dev": "concurrently \"npm start\" \"npm run json-server \" "
   },
