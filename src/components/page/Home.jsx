@@ -2,6 +2,9 @@ import React, { useContext } from "react";
 import TaskContext from "../../Context/Task/taskContext";
 import { Card, Progress } from "antd";
 import moment from "jalali-moment";
+import Task from "../layouts/task/Task";
+import WrapperTask from "../layouts/task/WrapperTask";
+
 const Home = () => {
   const taskContext = useContext(TaskContext);
   const { task } = taskContext;
@@ -9,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <div className="w-1/3 mx-auto mt-3 ">
-        <div className="rounded bg-indigo shadow-md p-2">
+        <div className="bg-gradient-to-r from-bogart-500 via-indigo-600 to-purple-900 py-3 rounded-lg shadow-md p-2">
           <div className="flex">
             <div className="w-5/6 rtl text-white">
               <h1 className="text-white">تسک های امروز</h1>
@@ -37,6 +40,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <WrapperTask>
+          {task.map((el) => (
+            <Task />
+          ))}
+        </WrapperTask>
       </div>
     </div>
   );

@@ -5,22 +5,13 @@ import taskReducer from "./taskReducer";
 import {} from "../types";
 const TaskState = (props) => {
   const initialState = {
-    task: [],
+    task: [{ id: 1, text: "hoola" }],
     filter: [],
     isFilter: false,
   };
-  React.useEffect(() => {
-    fetchTask();
-  }, []);
+
   const [state, dispatch] = useReducer(taskReducer, initialState);
-  const fetchTask = async () => {
-    try {
-      let res = await axios.post("/task");
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+
   return (
     <taskContext.Provider
       value={{

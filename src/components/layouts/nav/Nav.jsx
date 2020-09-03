@@ -3,7 +3,7 @@ import * as Feather from "react-feather";
 
 const Nav = () => {
   return (
-    <div className="w-full h-28 shadow-lg px-5 flex bg-gradient-to-r from-indigo  to-bogart-600 ">
+    <div className="w-full h-28 shadow-lg px-5 flex bg-gradient-to-r from-purple-900  via-indigo-600 to-bogart-600  ">
       <div className="w-1/3 flex items-center">
         <h3 className="text-white font-bold text-xl">Zitack</h3>
       </div>

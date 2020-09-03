@@ -6,6 +6,7 @@ module.exports = {
       ...colors,
       indigo: "#41385A",
       bogart: {
+        500: "#413A6F",
         600: "#2A2C5C",
         900: "#0B0720",
       },
