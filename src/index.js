@@ -5,6 +5,7 @@ import { Spin } from "antd";
 import "antd/dist/antd.css";
 import "./app-assets/css/app.css";
 import "vazir-font/dist/Farsi-Digits/font-face-FD.css";
+import "animate.css";
 const App = lazy(() => import("./App"));
 ReactDOM.render(
   <React.StrictMode>
